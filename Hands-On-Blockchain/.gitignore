@@ -1,5 +1,6 @@
-blockchain*
-blockchain/*
+blockchain
+private
+
 __pycache__*
 *__pycache__*
 *__pycache__/*
