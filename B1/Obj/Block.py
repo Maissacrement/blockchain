@@ -17,3 +17,12 @@ class Block():
     }, sort_keys=True).encode()
 
     return hashlib.sha256(block_string).hexdigest()
+
+  def __str__(self):
+    string="nonce"+ str(self.nonce) + "\n"
+    string+= "tstamp"+ str(self.tstamp) + "\n"
+    string+="transaction" + str(self.transaction) + "\n"
+    string+="prevHash" + str(self.prevHash) + "\n"
+    string+="hash" + str(self.hash) + "\n"
+
+    return string

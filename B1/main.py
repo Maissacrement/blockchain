@@ -12,6 +12,9 @@ def main():
     print(yanaCoin.chain[0].__dict__)
     print(yanaCoin.chain[1].__dict__)
 
+    for el in yanaCoin.chain:
+      print(el)
+
 if __name__ == "__main__":
     # execute only if run as a script
     main()
